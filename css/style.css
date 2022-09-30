@@ -1,0 +1,79 @@
+#slider {
+    position: fixed;
+    z-index: 9000000000000000000;
+    top: 0px;
+    right: 0px;
+
+    background-color : #E3EEF8;
+    width : 0px;
+    transition: 0.4s;
+
+    height: 100vh;
+    overflow-y : auto;
+}
+
+
+
+
+
+#sbodycontainer {
+    color: white;
+}
+
+
+
+
+
+
+
+/* The extract buttons inside of slider */
+.internal_button {
+    display: inline-block;
+
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #0b66c3;
+    border: none;
+    border-radius: 5px;
+    width : 430px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 2px;
+
+}
+
+.internal_button:hover {background-color: #035b8a}
+
+.internal_button:active {
+    background-color: #035b8a;
+
+    transform: translateY(4px);
+  }
+
+
+
+textarea {
+    margin: 1px;
+    padding-right: 20px;
+    border: 5px solid black;
+    height: 250px !important;
+    resize: none;
+    border-radius: 10px;
+
+
+}
+
+textarea:hover {
+    background-color: rgb(178, 197, 231);
+    border: 2px solid rgb(27, 15, 49);
+}
+
+#heading{
+  color: #0b66c3;
+  font-weight: bold;
+
+}
