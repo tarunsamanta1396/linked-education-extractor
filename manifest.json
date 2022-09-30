@@ -1,0 +1,36 @@
+{
+    "name":"linkedin Education extractor",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "icons": {
+        "128": "education.png"
+     },
+    "action" : {
+        "default_title": "ext13"
+    },
+
+    "background": {
+        "service_worker": "./scripts/events.js"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://*.linkedin.com/*"],
+            "css": ["./css/style.css"],
+            "js": ["./scripts/jquery-3.6.0.min.js","./scripts/contents.js"]
+        }
+    ],
+
+    "permissions": [
+        "tabs",
+        "storage",
+        "activeTab"
+    ],
+
+    "web_accessible_resources": [{
+        "resources": ["./views/slider.html", "./scripts/jquery-3.6.0.min.js"],
+        "matches": ["<all_urls>"]
+    }]
+
+
+}
